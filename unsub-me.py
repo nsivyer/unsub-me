@@ -99,7 +99,9 @@ for message in emails:
             unsub_urls.append(url)
             unsub_doms.append(url.split("//")[-1].split("/")[0])
 
-    print("\n".join([[x,unsub_doms.count(x)] for x in set(unsub_doms)]))
+#print("\n".join( x for x in set(unsub_doms) ) )
+print("\n".join( x for x in set(unsub_urls) ) )
+#print([[x,unsub_doms.count(x)] for x in set(unsub_doms)])
 
 
     
