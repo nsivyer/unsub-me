@@ -23,6 +23,5 @@ Grabs the last n days of emails, searches and prints a list of unsubscribe URLs,
 
 I had to relax some security measures on gmail to get raw IMAP working. I enabled them again after use. 
 
-[https://myaccount.google.com/lesssecureapps]
-
+https://myaccount.google.com/lesssecureapps
 
