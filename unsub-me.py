@@ -57,7 +57,7 @@ try:
     mail.login(user.strip(), password.strip())
     mail.list()
     mail.select(folder,readonly=True )
-    date = (datetime.date.today() - datetime.timedelta(check_days)).strftime("%d-%b-%Y")
+    date = (datetime.date.today() - datetime.timedelta(int(check_days))).strftime("%d-%b-%Y")
     typ, data = mail.uid('search', None, '(SENTSINCE {date})'.format(date=date))
     email_uids = data[0].split()
     print "Found %s emails. Fetching:" % len(email_uids)
